@@ -3,14 +3,14 @@ import * as React from "react";
 
 function App() {
   const handleLogin = () => {
-    fetch("http://localhost:3001/login", { method: "POST" })
+    fetch("https://app-api-8gan.onrender.com/login", { method: "POST" })
       .then((response) => response.text())
       .then((data) => console.log(data))
       .catch((error) => console.log(error));
   };
 
   const handleCheck = () => {
-    fetch("http://localhost:3001/check")
+    fetch("https://app-api-8gan.onrender.com/check")
       .then((response) => response.text())
       .then((data) => console.log(data))
       .catch((error) => console.log(error));
